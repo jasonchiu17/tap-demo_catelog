@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-consuming-rest
+  description: TAP Demo App , demo-consuming-rest
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=demo-consuming-rest'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
